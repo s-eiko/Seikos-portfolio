@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seiko's Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&  display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header e Nav -->
-
-    <!-- Para celular -->
-    <header id="header--mobile">
-        <img src="assets/images/icons/lnr-sun.svg" class="icons switch-button" alt="Ícone para trocar de tema">
-    </header>
-
-    <nav class="nav--mobile">
-        <a class="nav-button" href="assets/pages/projects.html">Projetos</a>
-        <a class="nav-button" href="about-me">Sobre</a>
-        <a class="nav-button" href="#contact">Contato</a>
-    </nav>
-
-    <!-- Para computador -->
-    <header id="header--pc">
-        <nav id="nav--pc">
-            <a class="nav-button" href="assets/pages/projects.html">Projetos</a>
-            <a class="nav-button" href="about-me">Sobre</a>
-            <a class="nav-button" href="#contact">Contato</a>
-            <img src="assets/images/icons/lnr-sun.svg" class="icons switch-button nav-button" alt="Ícone para trocar de tema">
-        </nav>
-    </header>
-
-    
+  
     <main>
+
+        <!-- Header e Nav -->
+        
+        <!-- Para celular -->
+        <header id="header--mobile">
+            <img src="assets/images/icons/lnr-sun.svg" class="icons switch-button"  alt="Ícone para trocar de tema">
+        </header>
+    
+        <nav id="nav--mobile">
+            <a class="nav-button" href="assets/pages/projects.html">Projetos</a>
+            <a class="nav-button" href="#about-me">Sobre</a>
+            <a class="nav-button" href="#contact">Contato</a>
+        </nav>
+    
+        <!-- Para computador -->
+        <header id="header--pc">
+            <nav id="nav--pc">
+                <a class="nav-button" href="assets/pages/projects.html">Projetos</a>
+                <a class="nav-button" href="#about-me">Sobre</a>
+                <a class="nav-button" href="#contact">Contato</a>
+                <img src="assets/images/icons/lnr-sun.svg" class="icons     switch-button nav-button" alt="Ícone para trocar de tema">
+            </nav>
+        </header>
 
         <!-- Início -->
         <section id="home">
 
             <!-- Introdução -->
             <section id="intro">
-                <h1>Olá, sou Mariana Seiko Fukuoka</h1>
+                <h1>Olá, sou <span id="name">Mariana Seiko Fukuoka</span></h1>
                 <p id="intro-description">Construindo produtos para web com as principais tecnologias do mercado</p>
             </section>
 
@@ -158,7 +164,7 @@
             </div>
 
             <!-- Descrição -->
-            <p id="about-me-description">Estudante de Análise e Desenvolvimento de Sistemas dedicada a aprender novas tecnologias! Atualmente meu foco é no front-end, mas pretendo desenvolver habilidades full-stack e me especializar no back-end futuramente.</p>
+            <p class="about-me-description">Estudante de Análise e Desenvolvimento de Sistemas dedicada a aprender novas tecnologias! Atualmente meu foco é no front-end, mas pretendo desenvolver habilidades full-stack e me especializar no back-end futuramente.</p>
 
             <!-- Botões -->
             <div class="about-me-buttons-box">

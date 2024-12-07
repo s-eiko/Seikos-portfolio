@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    position: relative;
+}

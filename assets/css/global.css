@@ -1,0 +1,177 @@
+@import url('/assets/css/reset.css');
+
+/* Adicionando fontes */
+
+@font-face {
+    font-family: 'Black Delights';
+    src: URL('../fonts/Black\ Delights.ttf') format('truetype');
+}
+
+/* Declarando variáveis para os temas */
+
+:root, :root[data-theme='dark'] {
+    --primary-bg-color: #1B1521;
+    --secondary-bg-color: #251D2C;
+
+    --title-color: #D41E45;
+    --secondary-title-color: #ce95a1;
+    --text-color: #B5AC01;
+    --scroll-bar-color: #ECBA09;
+}
+
+/* :root[data-theme='light'] {
+    --primary-bg-color: #1B1521;
+    --secondary-bg-color: #251D2C;
+
+    --title-color: #D41E45;
+    --text-color: #B5AC01;
+    --scroll-bar-color: #ECBA09;
+} */
+
+html[data-theme='light'] .icons {
+    filter: invert(1);
+}
+
+/* Estilizando elementos */
+
+.icons {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+h1 {
+    font-size: 3.438rem;
+    font-family: 'Black Delights', sans-serif;
+    color: var(--title-color);
+    margin: 0.344rem 0;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.625rem;
+    color: var(--title-color);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.375rem;
+    color: var(--text-color);
+}
+
+span {
+    opacity: 60%;
+}
+
+#intro-description, .project-description, #about-description, .about-me-description, #experience-description, #contact-description {
+    color: var(--text-color);
+    font-size: 1.375rem;
+}
+
+/* Animando o nome */
+span#name {
+    opacity: 100%;
+    font-family: 'Black Delights', sans-serif;
+    background-image: linear-gradient(to right, var(--title-color)35%, var(--secondary-title-color) 50%, var(--title-color) 65%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+
+    animation: animatedName 3s infinite alternate;
+}
+
+@keyframes animatedName {
+    from {
+        background-position: 100%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+/* Nav */
+
+#nav--mobile {
+    display: grid;
+    grid-template-columns: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
+    text-align: center;
+    align-items: center;
+    background-color: var(--scroll-bar-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 3.125rem;
+}
+
+.nav-button {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+/* Home */
+
+section#home {
+    background:
+        linear-gradient(to bottom right, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) bottom right,
+        linear-gradient(to bottom left, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) bottom left,
+        linear-gradient(to top left, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) top left,
+        linear-gradient(to top right, var(--primary-bg-color) 35%, var(--secondary-bg-color) 50%) top right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#home #intro {
+    display: block;
+}
+
+#home #home-socials {
+    display: flex;
+}
+
+#home-socials .icons {
+    margin: 1.375rem 0 0.688rem 0;
+}
+
+/* See projects */
+section#see-projects {
+    background: linear-gradient(to bottom, var(--secondary-bg-color), var(--primary-bg-color));
+    padding: 1.094rem 0;
+}
+
+#see-projects a {
+    text-decoration: none;
+    font-size: 1.188rem;
+    color: var(--title-color);
+    background-color: var(--secondary-bg-color);
+    padding: 0.75rem 1.75rem;
+    border-radius: 3.125rem;
+    box-shadow: 0 0 0.188rem 0.125rem var(--title-color);
+    transition: all .5s ease;
+}
+
+#see-projects a:hover {
+    color: var(--secondary-bg-color);
+    background-color: var(--title-color);
+}
+
+/* Technologies */
+
+section#technologies {
+    text-align: center;
+    display: block;
+}
+
+#technologies h2 {
+    margin: 3.5rem 0 0.344rem 0;
+}
+
+#technologies .technology-box {
+    margin: 0.344rem 0;
+    display: inline-block;
+}
+
+#technologies .technology-box__main {
+    display: flex;
+    padding: 0.5rem;
+}
