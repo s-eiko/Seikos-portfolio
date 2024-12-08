@@ -9,9 +9,14 @@
     scrollbar-color: var(--secondary-scroll-bar-color) transparent;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
+    transition: all .5s ease;
 }
 
 body {
     background-color: var(--primary-bg-color);
     position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
 }

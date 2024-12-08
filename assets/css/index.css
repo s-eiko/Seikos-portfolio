@@ -20,15 +20,6 @@
     --scroll-bar-color: #ecbb095a;
 }
 
-/* :root[data-theme='light'] {
-    --primary-bg-color: #1B1521;
-    --secondary-bg-color: #251D2C;
-
-    --title-color: #D41E45;
-    --text-color: #B5AC01;
-    --scroll-bar-color: #ECBA09;
-} */
-
 html[data-theme='light'] .icons {
     filter: invert(1);
 }
