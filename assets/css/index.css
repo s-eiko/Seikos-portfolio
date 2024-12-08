@@ -1,4 +1,5 @@
 @import url('/assets/css/reset.css');
+@import url('/assets/css/index-responsive.css');
 
 /* Adicionando fontes */
 
@@ -16,8 +17,7 @@
     --title-color: #D41E45;
     --secondary-title-color: #ce95a1;
     --text-color: #B5AC01;
-    --scroll-bar-color: #ECBA09;
-    --secondary-scroll-bar-color: #ecbb095a;
+    --scroll-bar-color: #ecbb095a;
 }
 
 /* :root[data-theme='light'] {
@@ -102,7 +102,7 @@ span#name {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-scroll-bar-color);
+    background: var(--scroll-bar-color);
     border-radius: 20px;
 }
 
@@ -113,7 +113,7 @@ span#name {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     align-items: center;
-    background-color: var(--scroll-bar-color);
+    background-color: var(--text-color);
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -335,6 +335,10 @@ section#about-me {
 
 #about-me #header h2 {
     margin: 0;
+}
+
+#about-me #header #about {
+    justify-content: center;
 }
 
 #about-me .about-me-description, #experience-description {
